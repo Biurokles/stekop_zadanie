@@ -1,10 +1,21 @@
 const { app, BrowserWindow, ipcMain, dialog } = require('electron/main')
 const path = require('node:path')
+const fs = require('fs');
 
 async function handleFileOpen () {
-  const { canceled, filePaths } = await dialog.showOpenDialog()
+  const { canceled, filePaths } = await dialog.showOpenDialog({
+    title: 'Wybierz plik tekstowy',
+    filters: [{ name: 'Pliki tekstowe', extensions: ['txt'] }],
+  })
   if (!canceled) {
-    return filePaths[0]
+  const filePath = filePaths[0];
+  const content = fs.readFileSync(filePath, 'utf8');
+
+  return {content, filePath, canceled:false };
+  }
+  else
+  {
+    return {canceled:true};
   }
 }
 
