@@ -9,3 +9,8 @@ Na początek instalujemy zależności:
 A następnie odpalamy aplikację
 `npm run start`
 
+# Uwaga!
+Przy odpalaniu przez VS Code, należy przełączyć terminal na Command Prompt (Windows), na wsl nie śmiga.
+
+# Dane
+W aplikacji można wybrać pliki .txt, które mają punkty w formacie: X Y Z
