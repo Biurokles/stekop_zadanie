@@ -21,6 +21,7 @@ async function handleFileOpen () {
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
+    autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }

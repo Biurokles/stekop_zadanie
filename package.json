@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "plotly.js-dist-min": "^3.2.0"
+  },
+  "devDependencies": {
+    "electron": "^39.1.2"
   }
 }
