@@ -4,7 +4,6 @@
   "description": "zadanie rekrutacyjne do firmy stekop",
   "keywords": [
     "Electron",
-    "Three.js",
     "3DChart"
   ],
   "license": "ISC",
@@ -14,5 +13,8 @@
   "scripts": {
     "test": "no test specified sorry",
     "start": "electron ."
+  },
+  "dependencies": {
+    "plotly.js-dist-min": "^3.2.0"
   }
 }

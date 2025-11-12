@@ -1,0 +1,4 @@
+    body { font-family: Arial, sans-serif; margin: 0; padding: 1vw; background:#f6f7fb;}
+    header { display:flex; gap:2vw; align-items:center; margin-bottom:2vh; }
+    #plot {display:flex; width:98vw; height:86vh; background: white; }
+    button { padding:2vh 2vw; border-radius:6px; border:1px solid lightgray; background:white   ; cursor:pointer }
